@@ -1,0 +1,261 @@
+<!-- FunStorming — SM-001 · 4.1 — Fill-in-the-blank drag & drop — v1 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>SM-001 &middot; 4.1</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  #fsb-sm001-41{
+    --cyan:#3FB8B2; --violetblue:#5A6CFF; --violet:#8A4FF0; --magenta:#F0468C;
+    --ink:#16306B; --paper:#F8F9FB;
+    box-sizing:border-box; max-width:900px; margin:0 auto; padding:28px 26px 24px;
+    background:var(--paper); border-radius:18px;
+    font-family:'Poppins',Arial,Helvetica,sans-serif; color:var(--ink);
+  }
+  #fsb-sm001-41 *{box-sizing:border-box;}
+  #fsb-sm001-41 .fsb-head{display:flex; align-items:center; justify-content:space-between; gap:14px; margin-bottom:14px; flex-wrap:wrap;}
+  #fsb-sm001-41 h1{
+    margin:0; font-size:21px; font-weight:700; line-height:1.25;
+    background:linear-gradient(90deg,var(--cyan),var(--violetblue) 45%,var(--violet) 75%,var(--magenta));
+    -webkit-background-clip:text; background-clip:text; color:transparent;
+  }
+  #fsb-sm001-41 .fsb-reset{
+    border:2px solid var(--ink); background:#fff; color:var(--ink); font-family:inherit;
+    font-weight:600; font-size:13px; padding:8px 16px; border-radius:999px; cursor:pointer;
+    transition:background .15s ease, color .15s ease;
+  }
+  #fsb-sm001-41 .fsb-reset:hover{background:var(--ink); color:#fff;}
+  #fsb-sm001-41 .fsb-card{
+    background:#fff; border-radius:14px; padding:22px 24px;
+    border:1px solid #E3E7F1; box-shadow:0 2px 10px rgba(22,48,107,.06);
+  }
+  #fsb-sm001-41 .fsb-text{font-size:16px; line-height:2.1; font-weight:400;}
+  #fsb-sm001-41 .fsb-blank{
+    display:inline-flex; align-items:center; justify-content:center;
+    min-height:30px; margin:0 3px; padding:2px 8px; vertical-align:middle;
+    border:2px dashed #B9C2DD; border-radius:8px; background:#EEF1FA;
+    font-weight:600; font-size:14px; color:#98A2C3;
+  }
+  #fsb-sm001-41 .fsb-blank.fsb-filled{
+    border:none; background:transparent; padding:0; min-height:0; border-radius:0;
+  }
+  #fsb-sm001-41 .fsb-blank.fsb-over{border-color:var(--violetblue); background:#E4E8FF;}
+  #fsb-sm001-41 .fsb-pool-label{
+    margin:22px 0 10px; font-size:12px; font-weight:600; letter-spacing:.05em;
+    text-transform:uppercase; color:#7C88AD;
+  }
+  #fsb-sm001-41 .fsb-pool{
+    display:flex; flex-wrap:wrap; gap:10px; min-height:52px;
+    padding:12px; border-radius:12px; background:#F1F3F9; border:1px dashed #CBD3E8;
+  }
+  #fsb-sm001-41 .fsb-tile{
+    display:inline-block; padding:7px 14px; border-radius:9px; font-weight:600; font-size:14px;
+    cursor:grab; user-select:none; touch-action:none; border-bottom:3px solid rgba(0,0,0,.15);
+    background:var(--violetblue); color:#fff; white-space:nowrap;
+  }
+  #fsb-sm001-41 .fsb-tile.fsb-dragging{
+    position:fixed; z-index:999; pointer-events:none; box-shadow:0 8px 18px rgba(22,48,107,.25);
+    opacity:.95;
+  }
+  #fsb-sm001-41 .fsb-tile.fsb-correct{background:var(--cyan); color:#fff;}
+  #fsb-sm001-41 .fsb-tile.fsb-wrong{background:var(--magenta); color:#fff;}
+  #fsb-sm001-41 .fsb-foot{
+    margin-top:16px; padding-top:12px; border-top:1px solid #E3E7F1;
+    display:flex; justify-content:space-between; font-size:11px; color:#9AA4C4; letter-spacing:.03em;
+  }
+</style>
+</head>
+<body>
+
+<div id="fsb-sm001-41">
+  <div class="fsb-head">
+    <div>
+      <h1>Recap</h1>
+    </div>
+    <button type="button" class="fsb-reset" data-fsb-reset>Reset</button>
+  </div>
+
+  <div class="fsb-card">
+    <p class="fsb-text">
+      A personal user manual is a <span class="fsb-blank" data-answer="one-page guide" style="width:15ch"></span> to working with you: <span class="fsb-blank" data-answer="communication, pressure, motivation, feedback" style="width:46ch"></span>, plus <span class="fsb-blank" data-answer="quirks and deal-breakers" style="width:25ch"></span>. It replaces <span class="fsb-blank" data-answer="weeks of guessing" style="width:18ch"></span> with <span class="fsb-blank" data-answer="minutes of clarity" style="width:19ch"></span>, <span class="fsb-blank" data-answer="cuts friction, and builds trust" style="width:32ch"></span>. Build it by <span class="fsb-blank" data-answer="answering four questions" style="width:25ch"></span>, adding a quirks line, trimming to one page, and <span class="fsb-blank" data-answer="trading manuals with your team" style="width:31ch"></span>.
+    </p>
+
+    <div class="fsb-pool-label">Drag the labels into the gaps above</div>
+    <div class="fsb-pool" data-fsb-pool>
+      <span class="fsb-tile" data-value="trading manuals with your team">trading manuals with your team</span>
+      <span class="fsb-tile" data-value="answering four questions">answering four questions</span>
+      <span class="fsb-tile" data-value="cuts friction, and builds trust">cuts friction, and builds trust</span>
+      <span class="fsb-tile" data-value="minutes of clarity">minutes of clarity</span>
+      <span class="fsb-tile" data-value="weeks of guessing">weeks of guessing</span>
+      <span class="fsb-tile" data-value="quirks and deal-breakers">quirks and deal-breakers</span>
+      <span class="fsb-tile" data-value="communication, pressure, motivation, feedback">communication, pressure, motivation, feedback</span>
+      <span class="fsb-tile" data-value="one-page guide">one-page guide</span>
+    </div>
+
+    <div class="fsb-foot">
+      <span>FUNSTORMING &middot; FILL IN THE BLANKS</span>
+      <span>SM-001</span>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  var root = document.getElementById('fsb-sm001-41');
+  if(!root){ return; }
+  var pool = root.querySelector('[data-fsb-pool]');
+  var resetBtn = root.querySelector('[data-fsb-reset]');
+  var dragEl = null, offX = 0, offY = 0;
+
+  function onDown(e){
+    var tile = e.target.closest ? e.target.closest('.fsb-tile') : null;
+    if(!tile || !root.contains(tile)) return;
+    e.preventDefault();
+    dragEl = tile;
+    var r = tile.getBoundingClientRect();
+    var pt = (e.touches && e.touches[0]) ? e.touches[0] : e;
+    offX = pt.clientX - r.left;
+    offY = pt.clientY - r.top;
+    tile.style.width = r.width + 'px';
+    tile.classList.add('fsb-dragging');
+    tile.style.left = r.left + 'px';
+    tile.style.top = r.top + 'px';
+    root.appendChild(tile);
+    document.addEventListener('mousemove', onMove);
+    document.addEventListener('touchmove', onMove, {passive:false});
+    document.addEventListener('mouseup', onUp);
+    document.addEventListener('touchend', onUp);
+  }
+
+  function clearOver(){
+    var overs = root.querySelectorAll('.fsb-over');
+    for(var i=0;i<overs.length;i++){ overs[i].classList.remove('fsb-over'); }
+  }
+
+  function onMove(e){
+    if(!dragEl) return;
+    e.preventDefault();
+    var pt = (e.touches && e.touches[0]) ? e.touches[0] : e;
+    dragEl.style.left = (pt.clientX - offX) + 'px';
+    dragEl.style.top = (pt.clientY - offY) + 'px';
+    dragEl.style.display = 'none';
+    var under = document.elementFromPoint(pt.clientX, pt.clientY);
+    dragEl.style.display = '';
+    clearOver();
+    var blank = under && under.closest ? under.closest('.fsb-blank') : null;
+    if(blank && root.contains(blank)){ blank.classList.add('fsb-over'); }
+  }
+
+  function settleTile(tile){
+    tile.classList.remove('fsb-dragging');
+    tile.style.position = '';
+    tile.style.left = '';
+    tile.style.top = '';
+    tile.style.width = '';
+    tile.style.zIndex = '';
+  }
+
+  function clearVerdict(tile){
+    tile.classList.remove('fsb-correct', 'fsb-wrong');
+  }
+
+  function flyTo(tile, targetParent){
+    var startRect = tile.getBoundingClientRect();
+    tile.classList.remove('fsb-dragging');
+    tile.style.transition = '';
+    tile.style.position = 'fixed';
+    tile.style.margin = '0';
+    tile.style.width = startRect.width + 'px';
+    tile.style.left = startRect.left + 'px';
+    tile.style.top = startRect.top + 'px';
+    tile.style.zIndex = '998';
+    targetParent.appendChild(tile);
+    var savedLeft = tile.style.left, savedTop = tile.style.top, savedWidth = tile.style.width;
+    tile.style.position = 'static';
+    tile.style.left = '';
+    tile.style.top = '';
+    tile.style.width = '';
+    var endRect = tile.getBoundingClientRect();
+    tile.style.position = 'fixed';
+    tile.style.left = savedLeft;
+    tile.style.top = savedTop;
+    tile.style.width = savedWidth;
+    void tile.offsetWidth;
+    requestAnimationFrame(function(){
+      tile.style.transition = 'left .22s ease, top .22s ease';
+      tile.style.left = endRect.left + 'px';
+      tile.style.top = endRect.top + 'px';
+    });
+    function done(){
+      tile.removeEventListener('transitionend', done);
+      settleTile(tile);
+      tile.style.transition = '';
+      tile.style.margin = '';
+    }
+    tile.addEventListener('transitionend', done);
+    setTimeout(done, 320);
+  }
+
+  function onUp(e){
+    if(!dragEl) return;
+    document.removeEventListener('mousemove', onMove);
+    document.removeEventListener('touchmove', onMove);
+    document.removeEventListener('mouseup', onUp);
+    document.removeEventListener('touchend', onUp);
+    var pt = (e.changedTouches && e.changedTouches[0]) ? e.changedTouches[0] : e;
+    dragEl.style.display = 'none';
+    var under = document.elementFromPoint(pt.clientX, pt.clientY);
+    dragEl.style.display = '';
+    clearOver();
+    var tile = dragEl;
+    dragEl = null;
+    var blank = under && under.closest ? under.closest('.fsb-blank') : null;
+    if(blank && root.contains(blank)){
+      var existing = blank.querySelector('.fsb-tile');
+      if(existing && existing !== tile){
+        clearVerdict(existing);
+        flyTo(existing, pool);
+      }
+      settleTile(tile);
+      blank.appendChild(tile);
+      blank.classList.add('fsb-filled');
+      if(tile.getAttribute('data-value') === blank.getAttribute('data-answer')){
+        tile.classList.remove('fsb-wrong');
+        tile.classList.add('fsb-correct');
+      } else {
+        tile.classList.remove('fsb-correct');
+        tile.classList.add('fsb-wrong');
+      }
+    } else {
+      clearVerdict(tile);
+      var parentBlank = tile.parentElement && tile.parentElement.classList && tile.parentElement.classList.contains('fsb-blank') ? tile.parentElement : null;
+      if(parentBlank){
+        settleTile(tile);
+      } else {
+        flyTo(tile, pool);
+      }
+    }
+    var blanks = root.querySelectorAll('.fsb-blank');
+    for(var i=0;i<blanks.length;i++){
+      blanks[i].classList.toggle('fsb-filled', !!blanks[i].querySelector('.fsb-tile'));
+    }
+  }
+
+  root.addEventListener('mousedown', onDown);
+  root.addEventListener('touchstart', onDown, {passive:false});
+
+  resetBtn.addEventListener('click', function(){
+    var blanks = root.querySelectorAll('.fsb-blank');
+    for(var i=0;i<blanks.length;i++){
+      var t = blanks[i].querySelector('.fsb-tile');
+      if(t){ settleTile(t); clearVerdict(t); pool.appendChild(t); }
+      blanks[i].classList.remove('fsb-filled');
+    }
+  });
+})();
+</script>
+
+</body>
+</html>
