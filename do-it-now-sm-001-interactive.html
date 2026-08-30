@@ -1,0 +1,235 @@
+<!-- ===================================================================== -->
+<!-- FUNSTORMING · DO IT NOW · SM-001 — BrainCert HTML embed                -->
+<!-- Paste EVERYTHING below into the BrainCert Web Content / source-code    -->
+<!-- box for "SM-001 3.2 Fill-in template". Use the HTML/source box, NOT    -->
+<!-- the URL-embed widget. Plain HTML + CSS + JS, isolated by a unique id   -->
+<!-- so it can't clash with BrainCert styling.                              -->
+<!-- ===================================================================== -->
+<style id="fsq-style">
+#fsq-sm-001{all:initial;display:block;width:100%;max-width:1440px;margin:0 auto;
+  font-family:'Poppins','Trebuchet MS','Segoe UI',system-ui,sans-serif;color:#754FFE}
+#fsq-sm-001 *{margin:0;padding:0;box-sizing:border-box;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+#fsq-sm-001 .fsq-viewport{width:100%;overflow:hidden}
+#fsq-sm-001 .fsq-scale{transform-origin:top left;width:1440px;height:810px}
+#fsq-sm-001 .fsq-board{width:1440px;height:810px;position:relative;border-radius:22px;padding:34px 38px 24px;
+  display:flex;flex-direction:column;overflow:hidden;
+  background:radial-gradient(1200px 620px at 0% 0%,rgba(63,184,178,.16),transparent 55%),
+    radial-gradient(1200px 700px at 100% 100%,rgba(240,70,140,.14),transparent 55%),
+    radial-gradient(900px 600px at 60% 40%,rgba(138,79,240,.10),transparent 60%),#F8F9FB;
+  border:2px solid rgba(138,79,240,.30);box-shadow:0 0 0 1px rgba(63,184,178,.18) inset}
+#fsq-sm-001 .fsq-head{display:flex;justify-content:space-between;align-items:flex-end;padding-bottom:16px;margin-bottom:20px;border-bottom:1.5px solid rgba(22,48,107,.18)}
+#fsq-sm-001 .fsq-trow{display:flex;align-items:center;gap:20px}
+#fsq-sm-001 .fsq-twrap h1{font-size:40px;font-weight:700;letter-spacing:.5px;line-height:1;
+  background:linear-gradient(110deg,#3FB8B2,#5A6CFF 40%,#8A4FF0 62%,#F0468C);
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent}
+#fsq-sm-001 .fsq-sub{margin-top:8px;color:#5A6B8A;font-size:15px;max-width:680px}
+#fsq-sm-001 .fsq-chip{border:1.5px solid rgba(63,184,178,.6);border-radius:12px;padding:9px 18px;min-width:230px;background:#fff}
+#fsq-sm-001 .fsq-chip span{display:block;font-size:10px;letter-spacing:2px;color:#3FB8B2;text-transform:uppercase}
+#fsq-sm-001 .fsq-blank{height:22px;border-bottom:2px solid rgba(22,48,107,.4);margin-top:5px}
+#fsq-sm-001 .fsq-tools{display:flex;gap:10px}
+#fsq-sm-001 .fsq-btn{font-family:inherit;font-weight:600;font-size:12px;letter-spacing:.4px;cursor:pointer;border:none;border-radius:10px;
+  padding:9px 15px;color:#fff;white-space:nowrap;box-shadow:0 4px 10px rgba(22,48,107,.18);background:#754FFE;line-height:1}
+#fsq-sm-001 .fsq-btn:hover{filter:brightness(1.12)}
+#fsq-sm-001 .fsq-ic{font-size:14px;margin-right:5px;vertical-align:-1px}
+#fsq-sm-001 .fsq-grid{flex:1;display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:1fr 1fr;gap:20px}
+#fsq-sm-001 .fsq-card{position:relative;border-radius:16px;padding:16px 16px 14px;display:flex;flex-direction:column;
+  background:#fff;border:1.5px solid rgba(22,48,107,.10);box-shadow:0 6px 16px rgba(22,48,107,.06)}
+#fsq-sm-001 .fsq-card::before{content:"";position:absolute;inset:0;border-radius:16px;padding:1.5px;
+  background:linear-gradient(135deg,#3FB8B2,#8A4FF0,#F0468C);
+  -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);
+  -webkit-mask-composite:xor;mask-composite:exclude;opacity:.6;pointer-events:none}
+#fsq-sm-001 .fsq-badge{position:absolute;top:-14px;left:-12px;width:40px;height:40px;border-radius:50%;background:#754FFE;color:#fff;
+  display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:bold;box-shadow:0 4px 10px rgba(22,48,107,.28)}
+#fsq-sm-001 .fsq-card h2{font-size:17px;font-weight:600;letter-spacing:.5px;margin:2px 0 12px 6px;color:#754FFE}
+#fsq-sm-001 .fsq-slots{display:flex;flex-wrap:wrap;gap:11px;flex:1}
+#fsq-sm-001 .fsq-note{flex:1 1 120px;background:#E4F8F6;border-radius:6px;overflow:hidden;position:relative;
+  box-shadow:0 4px 10px rgba(22,48,107,.10);transform:rotate(-1deg);display:flex;flex-direction:column;border:1px solid rgba(22,48,107,.06)}
+#fsq-sm-001 .fsq-note:nth-child(even){transform:rotate(1deg);background:#FFE7F1}
+#fsq-sm-001 .fsq-bar{height:7px;background:linear-gradient(90deg,#3FB8B2,#8A4FF0)}
+#fsq-sm-001 .fsq-note:nth-child(even) .fsq-bar{background:linear-gradient(90deg,#8A4FF0,#F0468C)}
+#fsq-sm-001 .fsq-lbl{font-size:11.5px;font-weight:bold;letter-spacing:.3px;text-transform:uppercase;color:#754FFE;padding:9px 11px 0}
+#fsq-sm-001 .fsq-hint{font-size:10.5px;color:#5A6B8A;margin-top:auto;padding:6px 11px 9px}
+#fsq-sm-001 .fsq-share{background:linear-gradient(135deg,rgba(138,79,240,.14),rgba(240,70,140,.14));border:1.5px solid rgba(240,70,140,.40);justify-content:center}
+#fsq-sm-001 .fsq-share::before{opacity:0}
+#fsq-sm-001 .fsq-tag{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+#fsq-sm-001 .fsq-arrow{font-size:24px;color:#F0468C}
+#fsq-sm-001 .fsq-share h2{margin:0;font-size:17px}
+#fsq-sm-001 .fsq-share .fsq-note{background:#fff}
+#fsq-sm-001 .fsq-share .fsq-bar{background:linear-gradient(90deg,#3FB8B2,#F0468C)}
+#fsq-sm-001 .fsq-foot{display:flex;justify-content:space-between;align-items:center;margin-top:18px;padding-top:14px;
+  border-top:1.5px solid rgba(22,48,107,.18);font-size:13px;letter-spacing:2px;font-weight:bold;color:#754FFE}
+#fsq-sm-001 .fsq-foot .fsq-brand{color:#5A6B8A}
+#fsq-sm-001 .usticky{position:absolute;width:110px;height:80px;min-width:110px;min-height:80px;z-index:5;background:#FFE27A;
+  border-radius:4px;display:flex;flex-direction:column;overflow:hidden;resize:both;box-shadow:0 8px 18px rgba(22,48,107,.22);transform:rotate(-1.5deg)}
+#fsq-sm-001 .usticky:nth-of-type(even){transform:rotate(1.5deg)}
+#fsq-sm-001 .ustick-bar{display:flex;align-items:center;justify-content:space-between;height:20px;padding:0 6px 0 8px;cursor:grab;
+  background:rgba(0,0,0,.06);border-radius:4px 4px 0 0;user-select:none}
+#fsq-sm-001 .ustick-bar:active{cursor:grabbing}
+#fsq-sm-001 .fsq-grip{font-size:11px;letter-spacing:2px;color:rgba(22,48,107,.5)}
+#fsq-sm-001 .ustick-del{border:none;background:transparent;cursor:pointer;font-size:15px;line-height:1;color:rgba(22,48,107,.55);padding:0 2px}
+#fsq-sm-001 .ustick-del:hover{color:#F0468C}
+#fsq-sm-001 .ustick-body{flex:1;padding:9px 10px;font-size:12.5px;line-height:1.35;color:#4a3b00;outline:none;overflow-wrap:anywhere}
+#fsq-sm-001 .ustick-body:empty:before{content:'Type your note…';color:rgba(74,59,0,.4)}
+@media print{
+  #fsq-sm-001{position:fixed !important;left:50% !important;top:40px !important;transform:translateX(-50%) !important;width:1440px !important;max-width:none !important;margin:0 !important}
+  #fsq-sm-001 .fsq-viewport,#fsq-sm-001 .fsq-scale{transform:none !important;width:1440px !important;height:810px !important;overflow:visible !important}
+  #fsq-sm-001 .fsq-board{border-radius:0}
+  #fsq-sm-001 .fsq-tools,#fsq-sm-001 .ustick-bar{display:none !important}
+  #fsq-sm-001 .usticky{resize:none !important}
+  @page{size:1520px 890px;margin:0}
+}
+</style>
+
+<div id="fsq-sm-001" class="fsq-root">
+  <div class="fsq-viewport">
+    <div class="fsq-scale">
+      <div class="fsq-board">
+        <div class="fsq-head">
+          <div class="fsq-twrap">
+            <div class="fsq-trow">
+              <h1>MY PERSONAL USER MANUAL</h1>
+              <div class="fsq-tools">
+                <button class="fsq-btn fsq-add" type="button"><span class="fsq-ic">&#43;</span>Sticky Note</button>
+                <button class="fsq-btn fsq-print" type="button"><span class="fsq-ic">&#128424;</span>Print / Save PDF</button>
+              </div>
+            </div>
+            <div class="fsq-sub">Drop a sticky in each slot. There are no wrong answers &mdash; this is how you help people work well with you.</div>
+          </div>
+          <div class="fsq-chip"><span>Your name</span><div class="fsq-blank"></div></div>
+        </div>
+        <div class="fsq-grid"><div class="fsq-card"><div class="fsq-badge">1</div><h2>COMMUNICATION</h2><div class="fsq-slots"><div class="fsq-note"><div class="fsq-bar"></div><div class="fsq-lbl">Best channel</div><div class="fsq-hint">Slack, email, call…</div></div><div class="fsq-note"><div class="fsq-bar"></div><div class="fsq-lbl">Hours</div><div class="fsq-hint">when I'm reachable</div></div><div class="fsq-note"><div class="fsq-bar"></div><div class="fsq-lbl">Avoid</div><div class="fsq-hint">what not to do</div></div></div></div><div class="fsq-card"><div class="fsq-badge">2</div><h2>UNDER PRESSURE</h2><div class="fsq-slots"><div class="fsq-note"><div class="fsq-bar"></div><div class="fsq-lbl">I tend to…</div><div class="fsq-hint">my stress pattern</div></div><div class="fsq-note"><div class="fsq-bar"></div><div class="fsq-lbl">What helps</div><div class="fsq-hint">what steadies me</div></div></div></div><div class="fsq-card"><div class="fsq-badge">3</div><h2>MOTIVATION</h2><div class="fsq-slots"><div class="fsq-note"><div class="fsq-bar"></div><div class="fsq-lbl">Best work when…</div><div class="fsq-hint">where I thrive</div></div><div class="fsq-note"><div class="fsq-bar"></div><div class="fsq-lbl">What drains me</div><div class="fsq-hint">energy leaks</div></div></div></div><div class="fsq-card"><div class="fsq-badge">4</div><h2>FEEDBACK</h2><div class="fsq-slots"><div class="fsq-note"><div class="fsq-bar"></div><div class="fsq-lbl">Lands best when…</div><div class="fsq-hint">how to reach me</div></div><div class="fsq-note"><div class="fsq-bar"></div><div class="fsq-lbl">Makes me defensive</div><div class="fsq-hint">what to sidestep</div></div></div></div><div class="fsq-card"><div class="fsq-badge">5</div><h2>QUIRKS &amp; DEAL-BREAKERS</h2><div class="fsq-slots"><div class="fsq-note"><div class="fsq-bar"></div><div class="fsq-lbl">Good to know</div><div class="fsq-hint">the human details</div></div></div></div><div class="fsq-card fsq-share"><div class="fsq-tag"><span class="fsq-arrow">&#10145;</span><h2>First person I'll share this with</h2></div><div class="fsq-slots"><div class="fsq-note"><div class="fsq-bar"></div><div class="fsq-lbl">Name</div><div class="fsq-hint">write it, then tell them</div></div></div></div></div>
+        <div class="fsq-foot"><span class="fsq-brand">FUNSTORMING &middot; DO IT NOW</span><span class="fsq-code">SM-001</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  var ROOT = document.getElementById('fsq-sm-001');
+  if(!ROOT || ROOT.getAttribute('data-fsq')) return;
+  ROOT.setAttribute('data-fsq','1');
+  var CODE = 'SM-001';
+  var viewport = ROOT.querySelector('.fsq-viewport');
+  var scaleWrap = ROOT.querySelector('.fsq-scale');
+  var board = ROOT.querySelector('.fsq-board');
+  var KEY = 'funstorming-stickies-' + CODE;
+  var count = 0, scale = 1;
+
+  function fit(){
+    var W = viewport.clientWidth || 1440;
+    scale = W / 1440;
+    scaleWrap.style.transform = 'scale(' + scale + ')';
+    viewport.style.height = Math.round(810 * scale) + 'px';
+  }
+
+  function save(){
+    try{
+      var data = [].map.call(board.querySelectorAll('.usticky'), function(n){
+        return { t:n.querySelector('.ustick-body').innerHTML, l:n.style.left, y:n.style.top, w:n.style.width, h:n.style.height };
+      });
+      localStorage.setItem(KEY, JSON.stringify(data));
+    }catch(e){}
+  }
+
+  function makeDraggable(note, handle){
+    handle.addEventListener('pointerdown', function(e){
+      if(e.target.closest('.ustick-del')) return;
+      e.preventDefault();
+      var nr = note.getBoundingClientRect();
+      var offX = (e.clientX - nr.left) / scale, offY = (e.clientY - nr.top) / scale;
+      handle.setPointerCapture(e.pointerId);
+      function mv(ev){
+        var br = board.getBoundingClientRect();
+        var x = (ev.clientX - br.left) / scale - offX;
+        var y = (ev.clientY - br.top) / scale - offY;
+        x = Math.max(0, Math.min(x, board.clientWidth  - note.offsetWidth));
+        y = Math.max(0, Math.min(y, board.clientHeight - note.offsetHeight));
+        note.style.left = x + 'px'; note.style.top = y + 'px';
+      }
+      function up(){ handle.releasePointerCapture(e.pointerId); handle.removeEventListener('pointermove', mv); handle.removeEventListener('pointerup', up); save(); }
+      handle.addEventListener('pointermove', mv);
+      handle.addEventListener('pointerup', up);
+    });
+  }
+
+  function createNote(text, left, top, w, h){
+    var n = document.createElement('div'); n.className = 'usticky';
+    n.style.left = left; n.style.top = top;
+    if(w) n.style.width = w; if(h) n.style.height = h;
+    var bar = document.createElement('div'); bar.className = 'ustick-bar';
+    var grip = document.createElement('span'); grip.className = 'fsq-grip'; grip.textContent = '∷';
+    var del = document.createElement('button'); del.className = 'ustick-del'; del.type='button'; del.title='Delete note'; del.innerHTML = '&times;';
+    del.addEventListener('click', function(ev){ ev.stopPropagation(); n.remove(); save(); });
+    bar.appendChild(grip); bar.appendChild(del);
+    var body = document.createElement('div'); body.className = 'ustick-body'; body.contentEditable = 'true'; body.innerHTML = text || '';
+    body.addEventListener('input', save);
+    n.appendChild(bar); n.appendChild(body);
+    board.appendChild(n);
+    makeDraggable(n, bar);
+    if(window.ResizeObserver){ var seen=false; new ResizeObserver(function(){ if(seen) save(); seen=true; }).observe(n); }
+    return { n:n, body:body };
+  }
+
+  function addNote(){
+    var bx = 470 + (count % 5) * 26, by = 150 + (count % 5) * 26; count++;
+    createNote('', bx + 'px', by + 'px', '110px', '80px').body.focus();
+    save();
+  }
+
+  // Print a clean copy in its own window (board only). This works even when
+  // BrainCert wraps us in an embedded frame, where a normal print would grab
+  // the whole lecture page (nav buttons included). Built with DOM APIs only
+  // (createElement / importNode / appendChild) to stay WAF-safe.
+  // Grab our CSS straight from the live stylesheets (robust even if BrainCert's
+  // sanitizer strips attributes/ids from the <style> tag).
+  function collectCSS(){
+    var out='', sheets=document.styleSheets, i, j, rules;
+    for(i=0;i<sheets.length;i++){
+      try{ rules=sheets[i].cssRules; }catch(e){ rules=null; }
+      if(rules){ for(j=0;j<rules.length;j++){ out += rules[j].cssText + '\n'; } }
+    }
+    if(!out){ var sts=document.querySelectorAll('style'); for(i=0;i<sts.length;i++){ out += sts[i].textContent + '\n'; } }
+    return out;
+  }
+
+  function printBoard(){
+    var css = collectCSS();
+    css += '\nhtml,body{margin:0;background:#fff;display:flex;justify-content:center;align-items:flex-start;padding:40px 0}'
+        +  '\n#fsq-sm-001{max-width:none !important;margin:0 !important}'
+        +  '\n#fsq-sm-001 .fsq-viewport,#fsq-sm-001 .fsq-scale{transform:none !important;width:1440px !important;height:810px !important;overflow:visible !important}'
+        +  '\n#fsq-sm-001 .fsq-board{border-radius:0}'
+        +  '\n#fsq-sm-001 .fsq-tools{display:none !important}'
+        +  '\n#fsq-sm-001 .ustick-bar{display:none !important}'
+        +  '\n#fsq-sm-001 .usticky{resize:none !important}'
+        +  '\n@page{size:1520px 890px;margin:0}';
+    var w = null;
+    try{ w = window.open('', 'fsqprint_' + CODE, 'width=1560,height=980'); }catch(e){}
+    if(!w){ window.print(); return; }   // popup blocked -> degraded fallback
+    var d = w.document;
+    d.title = 'FUNSTORMING · ' + CODE;
+    var s = d.createElement('style'); s.textContent = css; d.head.appendChild(s);
+    var clone = d.importNode(ROOT, true);
+    clone.id = 'fsq-sm-001';   // ensure scoped rules match even if id was stripped
+    var sc = clone.querySelector('.fsq-scale'); if(sc) sc.style.transform = 'none';
+    var vp = clone.querySelector('.fsq-viewport'); if(vp) vp.style.height = '810px';
+    d.body.appendChild(clone);
+    w.focus();
+    setTimeout(function(){ w.focus(); w.print(); }, 350);
+    w.onafterprint = function(){ try{ w.close(); }catch(e){} };
+  }
+
+  ROOT.querySelector('.fsq-add').addEventListener('click', addNote);
+  ROOT.querySelector('.fsq-print').addEventListener('click', printBoard);
+
+  try{
+    var saved = JSON.parse(localStorage.getItem(KEY) || '[]');
+    saved.forEach(function(s){ createNote(s.t, s.l || '470px', s.y || '150px', s.w, s.h); count++; });
+  }catch(e){}
+
+  fit();
+  window.addEventListener('resize', fit);
+  if(window.ResizeObserver){ new ResizeObserver(fit).observe(viewport); }
+  setTimeout(fit, 300);
+})();
+</script>
